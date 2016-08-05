@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:key="pref_enabled"
+        android:title="@string/prev_enabled"
+        android:defaultValue="false"
+        android:disableDependentsState="false" />
+
+    <CheckBoxPreference
+        android:key="pref_charging"
+        android:title="@string/prev_charging"
+        android:dependency="pref_enabled"/>
+
+    <EditTextPreference
+        android:key="pref_chargingTime"
+        android:title="@string/prev_chargingTime"
+        android:inputType="number"
+        android:dependency="pref_enabled"/>
+    <EditTextPreference
+        android:key="pref_dischargingTime"
+        android:title="@string/prev_dischargingTime"
+        android:inputType="number"
+        android:dependency="pref_enabled"/>
+    <EditTextPreference
+        android:key="pref_level"
+        android:title="@string/prev_level"
+        android:inputType="number"
+        android:dependency="pref_enabled"/>
+</PreferenceScreen>
