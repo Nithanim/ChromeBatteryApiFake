@@ -3,7 +3,7 @@
 
     <string name="prev_enabled">Rewrite enabled</string>
     <string name="prev_charging">Is the device charging?</string>
-    <string name="prev_chargingTime">Time in seconds util battery is fully charged. (smaller than zero means unknown)</string>
-    <string name="prev_dischargingTime">Time in seconds util battery is empty. (smaller than zero means unknown)</string>
+    <string name="prev_chargingTime">Time in seconds util battery is fully charged. (negative means unknown)</string>
+    <string name="prev_dischargingTime">Time in seconds util battery is empty. (negative means unknown)</string>
     <string name="prev_level">How much battery is left? (in %)</string>
 </resources>
