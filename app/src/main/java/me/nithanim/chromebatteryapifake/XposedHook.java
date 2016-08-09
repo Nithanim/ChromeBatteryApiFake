@@ -14,7 +14,9 @@ public class XposedHook implements IXposedHookLoadPackage {
 
     @Override
     public void handleLoadPackage(final XC_LoadPackage.LoadPackageParam lpparam) throws Throwable {
-        if (!lpparam.packageName.equals("com.android.chrome") && !lpparam.packageName.equals("com.chrome.dev")) {
+        if (!lpparam.packageName.equals("com.android.chrome")
+                && !lpparam.packageName.equals("com.chrome.dev")
+                && !lpparam.packageName.equals("com.google.android.webview")) {
             return;
         }
         log(Log.INFO, "Hooking " + lpparam.packageName + "...");
